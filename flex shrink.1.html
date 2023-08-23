@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      width: 300px;
+      background-color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+
+    .flex-item {
+      flex: 0 1 auto;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .flex-container:nth-of-type(2) .flex-item:nth-of-type(2) {
+      flex-shrink: 2;
+    }
+
+    .flex-container:nth-of-type(3) .flex-item:nth-of-type(3) {
+      flex-shrink: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Container 1 - Item 1</div>
+    <div class="flex-item">Container 1 - Item 2</div>
+    <div class="flex-item">Container 1 - Item 3</div>
+  </div>
+  
+  <div class="flex-container">
+    <div class="flex-item">Container 2 - Item 1</div>
+    <div class="flex-item">Container 2 - Item 2 (Flex Shrink: 2)</div>
+    <div class="flex-item">Container 2 - Item 3</div>
+  </div>
+  
+  <div class="flex-container">
+    <div class="flex-item">Container 3 - Item 1</div>
+    <div class="flex-item">Container 3 - Item 2</div>
+    <div class="flex-item">Container 3 - Item 3 (Flex Shrink: 3)</div>
+  </div>
+</body>
+</html>

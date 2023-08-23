@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    
+    .marquee-container {
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+    
+    .marquee {
+      display: flex;
+      animation: marquee 5s infinite;
+    }
+    
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    .marquee.left {
+      animation-direction: reverse;
+    }
+    
+    .marquee.up {
+      animation-name: marquee-up;
+    }
+    
+    @keyframes marquee-up {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(-100%); }
+    }
+    
+    .marquee.down {
+      animation-name: marquee-down;
+    }
+    
+    @keyframes marquee-down {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="marquee-container">
+      <div class="marquee">Left Direction</div>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee up">Up Direction</div>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee down">Down Direction</div>
+    </div>
+  </div>
+</body>
+</html>

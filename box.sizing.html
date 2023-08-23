@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box-sizing-example {
+      width: 300px;
+      height: 200px;
+      border: 2px solid black;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box-sizing-example-box {
+      box-sizing: border-box;
+      background-color: lightblue;
+    }
+
+    .box-sizing-example-normal {
+      box-sizing: content-box;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-sizing-example box-sizing-example-box">
+    <h2>Box-Sizing: Border Box</h2>
+    <p>This div uses the box-sizing property set to <strong>border-box</strong>.</p>
+    <p>The width and height specified includes the padding and border thickness.</p>
+  </div>
+
+  <div class="box-sizing-example box-sizing-example-normal">
+    <h2>Box-Sizing: Content Box</h2>
+    <p>This div uses the box-sizing property set to <strong>content-box</strong>.</p>
+    <p>The width and height specified does not include the padding and border thickness.</p>
+  </div>
+  <div class="box-sizing-example">
+    <h2>Box-Sizing: Content Box</h2>
+    <p>This div uses the box-sizing property set to <strong>content-box</strong>.</p>
+    <p>The width and height specified does not include the padding and border thickness.</p>
+  </div>
+</body>
+</html>

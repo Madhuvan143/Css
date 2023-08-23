@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      width: 300px;
+      background-color: #f0f0f0;
+    }
+
+    .flex-item {
+      flex: 0 1 auto;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .flex-item.shrinkable {
+      flex-shrink: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item shrinkable">Item 2 (Shrinkable)</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+</body>
+</html>

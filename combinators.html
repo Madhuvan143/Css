@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Descendant selector */
+    .container span {
+      color: blue;
+    }
+
+    /* Child selector */
+    .container > p {
+      color: red;
+    }
+
+    /* Adjacent sibling selector */
+    h2 + p {
+      font-weight: bold;
+    }
+
+    /* General sibling selector */
+    h2 ~ p {
+      text-decoration: underline;
+    }
+
+    /* Universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Grouping selector */
+    h1, h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span>This text is styled with the descendant selector.</span>
+    <p>This text is styled with the child selector.</p>
+    <h2>This is a heading.</h2>
+    <p>This paragraph is styled with the adjacent sibling selector.</p>
+    <p>This paragraph is styled with the general sibling selector.</p>
+  </div>
+  <h1>This is a heading.</h1>
+  <h2>This is another heading.</h2>
+</body>
+</html>

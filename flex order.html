@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background-color: blue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item-1 {
+      order: 2;
+      background-color: red;
+    }
+
+    .item-2 {
+      order: 1;
+      background-color: green;
+    }
+
+    .item-3 {
+      order: 3;
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item item-1">Item 1</div>
+    <div class="flex-item item-2">Item 2</div>
+    <div class="flex-item item-3">Item 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #f0f0f0;
+    }
+
+    .scrollable {
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      background-color: #f0f0f0;
+    }
+
+    .hidden {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+
+    .visible {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <p>Overflow: auto</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien ut odio elementum vulputate. Phasellus ac leo at libero luctus dignissim. Nulla sagittis diam sed est fringilla dictum.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="scrollable">
+      <p>Overflow: scroll</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien ut odio elementum vulputate. Phasellus ac leo at libero luctus dignissim. Nulla sagittis diam sed est fringilla dictum.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="hidden">
+      <p>Overflow: hidden</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien ut odio elementum vulputate. Phasellus ac leo at libero luctus dignissim. Nulla sagittis diam sed est fringilla dictum.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="visible">
+      <p>Overflow: visible</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien ut odio elementum vulputate. Phasellus ac leo at libero luctus dignissim. Nulla sagittis diam sed est fringilla dictum.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+margin:0;
+padding:0;
+
+font-family: sans-serif;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+background-color:#008001;
+overflow:hidden;
+}
+li {
+display:inline;
+}
+li a, .btn {
+display:inline-block;
+text-decoration:none;
+color:white;
+padding:15px 20px;
+}
+li a:hover, .dropdown:hover .btn{
+
+color:#b9ad1b;
+}
+li.dropdown{
+display:inline-block;
+}
+.dropcont{
+display:none;
+position:absolute;
+background-color:#008001;
+min-width:150px;
+z-index:1;
+}
+.dropcont a{
+color:white;
+padding:13px 15px;
+text-decoration:none;
+display:block;
+text-align:left;
+}
+.dropdown:hover .dropcont{
+display:block;
+}
+.dropcont a:hover {
+
+color:#b9ad1b;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li class="dropdown"><a href="#" class="btn">Products</a>
+<div class="dropcont">
+<a href="#" style="padding-top:-50px">Engineering</a>
+<a href="#">Telecom</a>
+<a href="#">Energy</a>
+<a href="#">Finance</a>
+<a href="#">Consultancy</a>
+</div>
+</li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</body>
+</html>

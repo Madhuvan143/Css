@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Unordered List */
+    ul {
+      list-style-type: disc;
+    }
+
+    /* Ordered List - Decimal Numbers */
+    ol.decimal {
+      list-style-type: decimal;
+    }
+
+    /* Ordered List - Roman Numerals */
+    ol.roman {
+      list-style-type: lower-roman;
+    }
+
+    /* Ordered List - Uppercase Letters */
+    ol.upper-alpha {
+      list-style-type: upper-alpha;
+    }
+
+    /* Ordered List - Lowercase Letters */
+    ol.lower-alpha {
+      list-style-type: lower-alpha;
+    }
+
+    /* Definition List */
+    dl {
+      margin-bottom: 20px;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin-left: 20px;
+    }
+
+    /* Nested List */
+    ul.nested-list {
+      list-style-type: square;
+    }
+
+    ul.nested-list ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+
+    ul.nested-list ul ul {
+      list-style-type: disc;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <h2>Ordered List - Decimal Numbers</h2>
+  <ol class="decimal">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <h2>Ordered List - Roman Numerals</h2>
+  <ol class="roman">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <h2>Ordered List - Uppercase Letters</h2>
+  <ol class="upper-alpha">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <h2>Ordered List - Lowercase Letters</h2>
+  <ol class="lower-alpha">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <h2>Definition List</h2>
+  <dl>
+    <dt>Term 1</dt>
+    <dd>Definition 1</dd>
+    <dt>Term 2</dt>
+    <dd>Definition 2</dd>
+    <dt>Term 3</dt>
+    <dd>Definition 3</dd>
+  </dl>
+
+  <h2>Nested List</h2>
+  <ul class="nested-list">
+    <li>Item 1</li>
+    <li>Item 2
+      <ul>
+        <li>Sub-item 1</li>
+        <li>Sub-item 2
+          <ul>
+            <li>Sub-sub-item 1</li>
+            <li>Sub-sub-item 2</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Item 3</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ul {
+background-color:lightblue;
+color:darkblue;
+list-style-type:none;
+margin:0;
+padding:0;
+width:200px;
+}
+li a {
+display:block;
+color:green;
+padding:10px 16px;
+text-decoration:none;
+}
+li a.sub{
+background-color:lime;
+}
+li a:hover:not(.sub){
+background-color:grey;
+color:black;
+font-size:20px;
+}
+</style>
+ </head>
+<body>
+<ul> 
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Career</a></li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#" class="sub">Profile</a></li>
+</ul>
+</body>
+</html>
